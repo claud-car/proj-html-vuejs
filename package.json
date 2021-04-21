@@ -1,0 +1,22 @@
+{
+  "name": "proj-html-vuejs",
+  "version": "1.0.0",
+  "description": "progetto autonomo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claud-car/proj-html-vuejs.git"
+  },
+  "author": "Claudio Carchietti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claud-car/proj-html-vuejs/issues"
+  },
+  "homepage": "https://github.com/claud-car/proj-html-vuejs#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.17"
+  }
+}
