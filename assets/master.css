@@ -10,23 +10,203 @@ body {
 }
 
 header {
-  background-color: #3D4955;
+  background-color: #21333E;
 }
 header .navbar {
   padding: 15px 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #E8ECEA;
+  color: #e8ecea9e;
   font-size: 14px;
 }
 header .navbar .left-part-navbar i {
   margin-right: 5px;
 }
+header .navbar .left-part-navbar:hover {
+  text-decoration: underline;
+  color: #fff;
+}
 header .navbar .right-part-navbar button {
   background-color: transparent;
-  color: #E8ECEA;
+  color: #e8ecea9e;
 }
 header .navbar .right-part-navbar * {
   padding: 0 12px;
+}
+header .navbar .right-part-navbar *:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.jumbo {
+  height: 900px;
+  background-image: url("../img/bg-6.jpg");
+  background-position: center;
+  background-color: #fff;
+}
+.jumbo .header-jumbo {
+  padding: 15px 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jumbo .header-jumbo img {
+  height: 40px;
+}
+.jumbo .header-jumbo .info-jumbo * {
+  padding: 0 20px;
+  font-size: 17px;
+}
+.jumbo .header-jumbo .info-jumbo a {
+  text-decoration: none;
+  color: #1C2224;
+}
+.jumbo .header-jumbo .info-jumbo button {
+  background-color: #078282;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+.jumbo .container-presentation {
+  padding: 0 20%;
+}
+.jumbo .container-presentation .presentation-page {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-right: 30px;
+}
+.jumbo .container-presentation .presentation-page .form {
+  margin: 10px;
+}
+.jumbo .container-presentation .presentation-page p {
+  color: #048383;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.jumbo .container-presentation .presentation-page h1 {
+  font-size: 85px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.jumbo .container-presentation .presentation-page input {
+  padding: 15px 15px;
+  background-color: #CCD0D3;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  padding-right: 40px;
+  margin: 5px;
+}
+.jumbo .container-presentation .presentation-page select {
+  padding: 15px 15px;
+  background-color: #CCD0D3;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  padding-right: 40px;
+  margin: 5px;
+  color: #757575;
+  width: 47.5%;
+}
+.jumbo .container-presentation .presentation-page button {
+  background-color: #078282;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 0 5px 5px 15px;
+}
+.jumbo .container-presentation .presentation-page button:last-child {
+  background-color: #E8ECEA;
+  color: #078282;
+  border: 1px solid #078282;
+}
+
+.jumbo {
+  height: 900px;
+  background-image: url("../img/bg-6.jpg");
+  background-position: center;
+  background-color: #fff;
+}
+.jumbo .header-jumbo {
+  padding: 15px 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jumbo .header-jumbo img {
+  height: 40px;
+}
+.jumbo .header-jumbo .info-jumbo * {
+  padding: 0 20px;
+  font-size: 17px;
+}
+.jumbo .header-jumbo .info-jumbo a {
+  text-decoration: none;
+  color: #1C2224;
+}
+.jumbo .header-jumbo .info-jumbo button {
+  background-color: #078282;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+.jumbo .container-presentation {
+  padding: 0 20%;
+}
+.jumbo .container-presentation .presentation-page {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-right: 30px;
+}
+.jumbo .container-presentation .presentation-page .form {
+  margin: 10px;
+}
+.jumbo .container-presentation .presentation-page p {
+  color: #048383;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.jumbo .container-presentation .presentation-page h1 {
+  font-size: 85px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.jumbo .container-presentation .presentation-page input {
+  padding: 15px 15px;
+  background-color: #CCD0D3;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  padding-right: 40px;
+  margin: 5px;
+}
+.jumbo .container-presentation .presentation-page select {
+  padding: 15px 15px;
+  background-color: #CCD0D3;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  padding-right: 40px;
+  margin: 5px;
+  color: #757575;
+  width: 47.5%;
+}
+.jumbo .container-presentation .presentation-page button {
+  background-color: #078282;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 0 5px 5px 15px;
+}
+.jumbo .container-presentation .presentation-page button:last-child {
+  background-color: #E8ECEA;
+  color: #078282;
+  border: 1px solid #078282;
 }
