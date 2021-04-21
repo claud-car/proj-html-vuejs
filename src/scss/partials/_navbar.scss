@@ -1,0 +1,25 @@
+header{
+    background-color: $limedspruce;
+    .navbar{
+        padding: 15px 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $blackhaze;
+        font-size: 14px;
+        .left-part-navbar{
+            i{
+                margin-right: 5px;
+            }
+        }
+        .right-part-navbar{
+            button{
+                background-color: transparent;
+                color: $blackhaze;
+            }
+            *{
+                padding: 0 12px;
+            }
+        }
+    }
+}

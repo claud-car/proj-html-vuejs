@@ -1,1 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: #3D4955;
+}
+header .navbar {
+  padding: 15px 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #E8ECEA;
+  font-size: 14px;
+}
+header .navbar .left-part-navbar i {
+  margin-right: 5px;
+}
+header .navbar .right-part-navbar button {
+  background-color: transparent;
+  color: #E8ECEA;
+}
+header .navbar .right-part-navbar * {
+  padding: 0 12px;
+}
