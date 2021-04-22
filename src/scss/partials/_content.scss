@@ -1,0 +1,137 @@
+main{
+    .about{
+        background-color: $woodsmoke;
+        .network-container{
+            padding: 0 25%;
+            display: flex;
+            color: $white;
+            .network-left{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 70px 0;
+                padding-right: 60px;
+                #about-title{
+                    color: $elfgreen;
+                    font-size: 14px;
+                    margin: 20px 0;
+                    font-weight: bold;
+                }
+                p{
+                    color: $navbar-text-color;
+                    font-size: 14px;
+                    margin: 15px 0;
+                }
+                h2{
+                    font-size: 45px;
+                    font-weight: bold;
+                    label{
+                        background-color: #07828242;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            .network-right{
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 60px 0;
+                .info-about{
+                    width: 50%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    i{
+                        color: $elfgreen;
+                        margin-right: 10px;
+                        font-size: 18px;
+                    }
+                    p{
+                        font-weight: bold;
+                        font-size: 20px;
+                        margin-top: 40px;
+                    }
+                    span{
+                        color: $navbar-text-color;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .business-area{
+        background-color: $blackhaze;
+        height: 820px;
+        .business-container{
+            padding: 80px 25%;
+            .business-title{
+                padding-bottom: 40px;
+                p{
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: $elfgreen;
+                }
+                h2{
+                    color: $woodsmoke;
+                    font-size: 35px;
+                    margin: 30px 0;
+                    label{
+                        background-color: #07828242;
+                        color: $elfgreen;
+                        padding: 0 10px;
+                    }
+                }
+                .text-business{
+                    display: flex;
+                    justify-content: space-between;
+                    span{
+                        font-size: 14px;
+                        color: $cloudy;
+                    }
+                    button{
+                        background-color: $elfgreen;
+                        color: $navbar-text-color;
+                        padding: 5px 15px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+            .business-infos{
+                width: 32%;
+                float: left;
+                border-radius: 10px;
+                padding: 40px;
+                background-color: $white;
+                .symbol{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 40px;
+                    color: $elfgreen;
+                }
+                p{
+                    color: $woodsmoke;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin: 20px 0;
+                }
+                span{
+                    color: $cloudy;
+                    font-size: 13px;
+                }
+            }
+            .mrg-right-bot{
+                margin-right: 2%;
+                margin-bottom: 2%;
+            }
+            .mrg-right{
+                margin-right: 2%;
+            }
+        }
+    }
+}

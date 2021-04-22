@@ -212,3 +212,139 @@ header .navbar .right-part-navbar *:hover {
   color: #078282;
   border: 1px solid #078282;
 }
+
+main .about {
+  background-color: #121117;
+}
+main .about .network-container {
+  padding: 0 25%;
+  display: flex;
+  color: #fff;
+}
+main .about .network-container .network-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 0;
+  padding-right: 60px;
+}
+main .about .network-container .network-left #about-title {
+  color: #078282;
+  font-size: 14px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+main .about .network-container .network-left p {
+  color: #e8ecea9e;
+  font-size: 14px;
+  margin: 15px 0;
+}
+main .about .network-container .network-left h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+main .about .network-container .network-left h2 label {
+  background-color: #07828242;
+  padding: 0 10px;
+}
+main .about .network-container .network-right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+main .about .network-container .network-right .info-about {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .about .network-container .network-right .info-about i {
+  color: #078282;
+  margin-right: 10px;
+  font-size: 18px;
+}
+main .about .network-container .network-right .info-about p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+}
+main .about .network-container .network-right .info-about span {
+  color: #e8ecea9e;
+  font-size: 14px;
+  line-height: 20px;
+}
+main .business-area {
+  background-color: #E8ECEA;
+  height: 820px;
+}
+main .business-area .business-container {
+  padding: 80px 25%;
+}
+main .business-area .business-container .business-title {
+  padding-bottom: 40px;
+}
+main .business-area .business-container .business-title p {
+  font-weight: bold;
+  font-size: 14px;
+  color: #078282;
+}
+main .business-area .business-container .business-title h2 {
+  color: #121117;
+  font-size: 35px;
+  margin: 30px 0;
+}
+main .business-area .business-container .business-title h2 label {
+  background-color: #07828242;
+  color: #078282;
+  padding: 0 10px;
+}
+main .business-area .business-container .business-title .text-business {
+  display: flex;
+  justify-content: space-between;
+}
+main .business-area .business-container .business-title .text-business span {
+  font-size: 14px;
+  color: #A5A09D;
+}
+main .business-area .business-container .business-title .text-business button {
+  background-color: #078282;
+  color: #e8ecea9e;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+main .business-area .business-container .business-infos {
+  width: 32%;
+  float: left;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: #fff;
+}
+main .business-area .business-container .business-infos .symbol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  color: #078282;
+}
+main .business-area .business-container .business-infos p {
+  color: #121117;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
+}
+main .business-area .business-container .business-infos span {
+  color: #A5A09D;
+  font-size: 13px;
+}
+main .business-area .business-container .mrg-right-bot {
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+main .business-area .business-container .mrg-right {
+  margin-right: 2%;
+}
