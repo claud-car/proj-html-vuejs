@@ -134,4 +134,54 @@ main{
             }
         }
     }
+    .management{
+        padding: 100px 0;
+        .title-management{
+            text-align: center;
+            padding: 0 36%;
+            p{
+                font-size: 14px;
+                font-weight: bold;
+                color: $elfgreen;
+            }
+            h2{
+                color: $woodsmoke;
+                font-size: 40px;
+                margin: 30px 0;
+                label{
+                    color: $elfgreen;
+                    background-color: #07828242;
+                    padding: 5px 10px;
+                }
+            }
+            span{
+                font-size: 13px;
+                color: $cloudy;
+            }
+        }
+        .line-part{
+            img{
+                width: 100%;
+            }
+            .info-management{
+                display: flex;
+                padding: 0 8%;
+                .infos{
+                    width: 20%;
+                    text-align: center;
+                    padding: 0 50px ;
+                    p{
+                        color: $woodsmoke;
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+                    }
+                    span{
+                        font-size: 13px;
+                        color: $cloudy; 
+                    }
+                }
+            }
+        }
+    }
 }

@@ -348,3 +348,51 @@ main .business-area .business-container .mrg-right-bot {
 main .business-area .business-container .mrg-right {
   margin-right: 2%;
 }
+main .management {
+  padding: 100px 0;
+}
+main .management .title-management {
+  text-align: center;
+  padding: 0 36%;
+}
+main .management .title-management p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #078282;
+}
+main .management .title-management h2 {
+  color: #121117;
+  font-size: 40px;
+  margin: 30px 0;
+}
+main .management .title-management h2 label {
+  color: #078282;
+  background-color: #07828242;
+  padding: 5px 10px;
+}
+main .management .title-management span {
+  font-size: 13px;
+  color: #A5A09D;
+}
+main .management .line-part img {
+  width: 100%;
+}
+main .management .line-part .info-management {
+  display: flex;
+  padding: 0 8%;
+}
+main .management .line-part .info-management .infos {
+  width: 20%;
+  text-align: center;
+  padding: 0 50px;
+}
+main .management .line-part .info-management .infos p {
+  color: #121117;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+main .management .line-part .info-management .infos span {
+  font-size: 13px;
+  color: #A5A09D;
+}
