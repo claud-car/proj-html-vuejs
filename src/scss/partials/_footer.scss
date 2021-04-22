@@ -1,0 +1,131 @@
+footer{
+    .newsletter{
+        background-image: url('../img/bg-1.jpg');
+        background-position: center;
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+    .newsletter-container{
+            padding: 100px 25%;
+            display: flex;
+            .newsletter-box{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 50%;
+                padding-right: 120px;
+                p{
+                    color: $elfgreen;
+                    font-size: 18px;
+                }
+                h2{
+                    margin: 25px 0;
+                    font-size: 40px;
+                    color: $white;
+                    label{
+                        color: $elfgreen;
+                        background-color: #07828242;
+                        padding: 5px 10px;    
+                    }
+                }
+                span{
+                    font-size: 14px;
+                    color: $cloudy;
+                    line-height: 25px;
+                }
+                input{
+                    padding: 15px 15px;
+                    border-radius: 5px;
+                    outline: none;
+                    font-size: 15px;
+                    padding-right: 40px;
+                    margin: 5px;
+                    margin-left: 0;
+                    background: rgba(255, 255, 255, 0.4);
+                } 
+                button{
+                    background-color: $elfgreen;
+                    font-size: 15px;
+                    padding: 10px 15px;
+                    color: $white;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    width: 130px;
+                }
+            }
+        }
+    }
+    .get-in-touch{
+        background-color: $woodsmoke;
+        .get-container{
+            padding:0 23%;
+            display: flex;
+            color: $navbar-text-color;
+            .info-company{
+                display: flex;
+                flex-direction: column;
+                width: 25%;
+                padding: 60px 0;
+                img{
+                    width: 120px;
+                }
+                span{
+                    padding: 17px 0;
+                }
+                button{
+                    border: 1px solid $elfgreen;
+                    background: transparent;
+                    font-size: 15px;
+                    padding: 10px 15px;
+                    color: $white;
+                    border-radius: 5px;
+                    width: 150px;
+                    margin-top: 18px;
+                }
+                i{
+                    padding-right: 10px;
+                }
+            }
+            .more-info{
+                width: 25%;
+                padding: 50px 0;
+                ul{
+                    list-style: none;
+                    padding: 40px;
+                    background-color: #2f384273;
+                    margin: 8px;
+                    border-radius: 20px;
+                    .header-li{
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: $white;
+                        padding-bottom: 15px;
+                    }
+                    li{
+                        padding: 8px 0;
+                        i{
+                            padding-right: 15px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .end-page{
+        background-color: #08080a;
+        .end-page-container{
+            padding: 0 23%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                font-size: 13px;
+                color: $cloudy;
+                label{
+                    color: $elfgreen;
+                }
+            }
+        }
+    }
+}

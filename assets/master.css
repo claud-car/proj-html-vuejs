@@ -576,3 +576,132 @@ main .news .news-container .publish p {
 main .news .news-container .mrg-bet {
   margin: 40px 2%;
 }
+
+footer .newsletter {
+  background-image: url("../img/bg-1.jpg");
+  background-position: center;
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+}
+footer .newsletter .newsletter-container {
+  padding: 100px 25%;
+  display: flex;
+}
+footer .newsletter .newsletter-container .newsletter-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 120px;
+}
+footer .newsletter .newsletter-container .newsletter-box p {
+  color: #078282;
+  font-size: 18px;
+}
+footer .newsletter .newsletter-container .newsletter-box h2 {
+  margin: 25px 0;
+  font-size: 40px;
+  color: #fff;
+}
+footer .newsletter .newsletter-container .newsletter-box h2 label {
+  color: #078282;
+  background-color: #07828242;
+  padding: 5px 10px;
+}
+footer .newsletter .newsletter-container .newsletter-box span {
+  font-size: 14px;
+  color: #A5A09D;
+  line-height: 25px;
+}
+footer .newsletter .newsletter-container .newsletter-box input {
+  padding: 15px 15px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  padding-right: 40px;
+  margin: 5px;
+  margin-left: 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+footer .newsletter .newsletter-container .newsletter-box button {
+  background-color: #078282;
+  font-size: 15px;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 130px;
+}
+footer .get-in-touch {
+  background-color: #121117;
+}
+footer .get-in-touch .get-container {
+  padding: 0 23%;
+  display: flex;
+  color: #e8ecea9e;
+}
+footer .get-in-touch .get-container .info-company {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 60px 0;
+}
+footer .get-in-touch .get-container .info-company img {
+  width: 120px;
+}
+footer .get-in-touch .get-container .info-company span {
+  padding: 17px 0;
+}
+footer .get-in-touch .get-container .info-company button {
+  border: 1px solid #078282;
+  background: transparent;
+  font-size: 15px;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  width: 150px;
+  margin-top: 18px;
+}
+footer .get-in-touch .get-container .info-company i {
+  padding-right: 10px;
+}
+footer .get-in-touch .get-container .more-info {
+  width: 25%;
+  padding: 50px 0;
+}
+footer .get-in-touch .get-container .more-info ul {
+  list-style: none;
+  padding: 40px;
+  background-color: #2f384273;
+  margin: 8px;
+  border-radius: 20px;
+}
+footer .get-in-touch .get-container .more-info ul .header-li {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 15px;
+}
+footer .get-in-touch .get-container .more-info ul li {
+  padding: 8px 0;
+}
+footer .get-in-touch .get-container .more-info ul li i {
+  padding-right: 15px;
+}
+footer .end-page {
+  background-color: #08080a;
+}
+footer .end-page .end-page-container {
+  padding: 0 23%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .end-page .end-page-container span {
+  font-size: 13px;
+  color: #A5A09D;
+}
+footer .end-page .end-page-container span label {
+  color: #078282;
+}
