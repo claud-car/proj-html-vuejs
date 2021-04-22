@@ -184,4 +184,98 @@ main{
             }
         }
     }
+    .expert{
+        background-color: $woodsmoke;
+        .expert-container{
+            padding: 60px 25%;
+            p{
+                font-weight: bold;
+                font-size: 14px;
+                color: $elfgreen;
+            }
+            .expert-overview{
+                display: flex;
+                .team-expert{
+                    color: $white;
+                    width: 65%;
+                    h2{
+                        font-size: 40px;
+                        padding: 20px 0;
+                        label{
+                            background-color: #07828242;
+                            padding: 5px 10px;
+                        }
+                    }
+                    span{
+                        color: $cloudy;
+                        font-size: 13px;
+                    }
+                    .team-container{
+                        .team{
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-top: 25px;
+                            .last-photo{
+                                margin-left:9px;
+                            }
+                            .photo-team{
+                                display: flex;
+                                margin-right: 20px;
+                                margin-bottom: 10px;
+                                img{
+                                    width: 100px;
+                                    border-radius: 5px;
+                                    margin-bottom: 20px;
+                                    margin-right: 20px;
+                                }
+                                .info-img{
+                                    padding: 5px 0;
+                                    p{
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                        color: $white;
+                                    }
+                                    span{
+                                        color: $cloudy;
+                                        font-size: 12px;
+                                        display: block; 
+                                        margin: 20px 0;
+                                    }
+                                    i{
+                                        color: $elfgreen;
+                                        background-color: #07828242;
+                                        border-radius: 50%;
+                                        padding: 9px 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .speech{
+                    width: 35%;
+                    padding: 35px;
+                    background-color: $elfgreen;
+                    border-radius: 10px;
+                    height: 430px;
+                    p{
+                        color: $white;
+                        font-size: 21px;
+                        margin-bottom: 10px;
+                        font-weight: bold;
+                    }
+                    .text-speech{
+                        font-size: 16px;
+                        color: $cloudy;
+                        padding: 15px 0;
+                        font-weight: normal;
+                    }
+                    #name-speech{
+                        font-size: 14px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
 }

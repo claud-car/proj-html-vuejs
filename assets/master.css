@@ -396,3 +396,95 @@ main .management .line-part .info-management .infos span {
   font-size: 13px;
   color: #A5A09D;
 }
+main .expert {
+  background-color: #121117;
+}
+main .expert .expert-container {
+  padding: 60px 25%;
+}
+main .expert .expert-container p {
+  font-weight: bold;
+  font-size: 14px;
+  color: #078282;
+}
+main .expert .expert-container .expert-overview {
+  display: flex;
+}
+main .expert .expert-container .expert-overview .team-expert {
+  color: #fff;
+  width: 65%;
+}
+main .expert .expert-container .expert-overview .team-expert h2 {
+  font-size: 40px;
+  padding: 20px 0;
+}
+main .expert .expert-container .expert-overview .team-expert h2 label {
+  background-color: #07828242;
+  padding: 5px 10px;
+}
+main .expert .expert-container .expert-overview .team-expert span {
+  color: #A5A09D;
+  font-size: 13px;
+}
+main .expert .expert-container .expert-overview .team-expert .team-container .team {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+main .expert .expert-container .expert-overview .team-expert .team-container .team .last-photo {
+  margin-left: 9px;
+}
+main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team {
+  display: flex;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team img {
+  width: 100px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team .info-img {
+  padding: 5px 0;
+}
+main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team .info-img p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team .info-img span {
+  color: #A5A09D;
+  font-size: 12px;
+  display: block;
+  margin: 20px 0;
+}
+main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team .info-img i {
+  color: #078282;
+  background-color: #07828242;
+  border-radius: 50%;
+  padding: 9px 11px;
+}
+main .expert .expert-container .expert-overview .speech {
+  width: 35%;
+  padding: 35px;
+  background-color: #078282;
+  border-radius: 10px;
+  height: 430px;
+}
+main .expert .expert-container .expert-overview .speech p {
+  color: #fff;
+  font-size: 21px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+main .expert .expert-container .expert-overview .speech .text-speech {
+  font-size: 16px;
+  color: #A5A09D;
+  padding: 15px 0;
+  font-weight: normal;
+}
+main .expert .expert-container .expert-overview .speech #name-speech {
+  font-size: 14px;
+  margin-top: 20px;
+}
