@@ -1,7 +1,7 @@
 var app = new Vue({
     el: '#root',
     data: {
-        index:1,
+        index:0,
         textInsertJumbo:[
             {
                 jumbo:'HOME'
@@ -65,6 +65,28 @@ var app = new Vue({
                 speechText1:"CEO Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet",
                 speechText2: "CEO Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sapiente maxime commodi assumenda.Lorem ipsum dolor sit amet",
                 speechText3: "CEO Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet"
+            }
+        ],
+        infoAbout:[
+            {
+                title: "Tradition",
+                text: ` Lorem ipsum dolor sit amet consectetur adipiscing elit.`,
+                class: "fa-medal"
+            },
+            {
+                title: "Security",
+                text: ` Lorem ipsum dolor sit amet consectetur adipiscing elit.`,
+                class: "fa-lock"
+            },
+            {
+                title: "Certificate",
+                text: ` Lorem ipsum dolor sit amet consectetur adipiscing elit.`,
+                class: "fa-edit"
+            },
+            {
+                title: "Expertise",
+                text: `Lorem ipsum dolor sit amet consectetur adipiscing elit.`,
+                class: "fa-graduation-cap"
             }
         ]
     },

@@ -14,6 +14,10 @@ button:hover {
   transform: scale(1.2);
 }
 
+i {
+  cursor: pointer;
+}
+
 header {
   background-color: #21333E;
 }
@@ -348,6 +352,9 @@ main .business-area .business-container .business-infos .symbol {
   font-size: 40px;
   color: #E94649;
 }
+main .business-area .business-container .business-infos .symbol i:first-child {
+  cursor: text;
+}
 main .business-area .business-container .business-infos p {
   color: #121117;
   font-weight: bold;
@@ -401,7 +408,13 @@ main .management .line-part .info-management {
 main .management .line-part .info-management .infos {
   width: 20%;
   text-align: center;
-  padding: 0 50px;
+  margin: 0 50px;
+  transition: 0.5s;
+}
+main .management .line-part .info-management .infos:hover {
+  transform: scale(1.5);
+  border: 1px solid #E94649;
+  box-shadow: red 2px 2px 10px;
 }
 main .management .line-part .info-management .infos p {
   color: #121117;
@@ -461,6 +474,10 @@ main .expert .expert-container .expert-overview .team-expert .team-container .te
   border-radius: 5px;
   margin-bottom: 20px;
   margin-right: 20px;
+}
+main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team .info-img {
   padding: 5px 0;

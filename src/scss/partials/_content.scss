@@ -113,6 +113,11 @@ main{
                     justify-content: space-between;
                     font-size: 40px;
                     color: $elfgreen;
+                    i{
+                        &:first-child{
+                            cursor: text;
+                        }
+                    }
                 }
                 p{
                     color: $woodsmoke;
@@ -169,7 +174,13 @@ main{
                 .infos{
                     width: 20%;
                     text-align: center;
-                    padding: 0 50px ;
+                    margin: 0 50px ;
+                    transition: 0.5s;
+                    &:hover{
+                        transform: scale(1.5);
+                        border: 1px solid $elfgreen;
+                        box-shadow: red 2px 2px 10px 
+                    }
                     p{
                         color: $woodsmoke;
                         font-size: 20px;
@@ -230,6 +241,10 @@ main{
                                     border-radius: 5px;
                                     margin-bottom: 20px;
                                     margin-right: 20px;
+                                    &:hover{
+                                        cursor: pointer;
+                                        transform: scale(1.1);
+                                    }
                                 }
                                 .info-img{
                                     padding: 5px 0;
@@ -275,6 +290,7 @@ main{
                     #name-speech{
                         font-size: 14px;
                         margin-top: 20px;
+
                     }
                 }
             }

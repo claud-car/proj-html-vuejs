@@ -10,7 +10,7 @@
 var app = new Vue({
   el: '#root',
   data: {
-    index: 1,
+    index: 0,
     textInsertJumbo: [{
       jumbo: 'HOME'
     }, {
@@ -59,6 +59,23 @@ var app = new Vue({
       speechText1: "CEO Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet",
       speechText2: "CEO Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sapiente maxime commodi assumenda.Lorem ipsum dolor sit amet",
       speechText3: "CEO Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet"
+    }],
+    infoAbout: [{
+      title: "Tradition",
+      text: " Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+      "class": "fa-medal"
+    }, {
+      title: "Security",
+      text: " Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+      "class": "fa-lock"
+    }, {
+      title: "Certificate",
+      text: " Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+      "class": "fa-edit"
+    }, {
+      title: "Expertise",
+      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+      "class": "fa-graduation-cap"
     }]
   },
   methods: {
@@ -172,7 +189,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"assets/master": 0
+/******/ 			"css/master": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -220,8 +237,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["assets/master"], () => (__webpack_require__("./src/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/master"], () => (__webpack_require__("./src/scss/master.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/master"], () => (__webpack_require__("./src/app.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/master"], () => (__webpack_require__("./src/scss/master.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/assets/master.css">
+    <link rel="stylesheet" href="dist/css/master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title>Document</title>
 </head>
@@ -73,21 +73,9 @@
                         </p>
                     </div>
                     <div class="network-right">
-                        <div class="info-about">
-                            <p><i class="fas fa-medal"></i>Tradition</p>
-                            <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
-                        </div>
-                        <div class="info-about">
-                            <p><i class="fas fa-lock"></i>Secutiry</p>
-                            <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
-                        </div>
-                        <div class="info-about">
-                            <p><i class="fas fa-edit"></i>Certificate</p>
-                            <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
-                        </div>
-                        <div class="info-about">
-                            <p><i class="fas fa-graduation-cap"></i>Expertise</p>
-                            <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
+                        <div v-for="about in infoAbout" class="info-about">
+                            <p><i :class='`fas ${about.class}`'></i>{{about.title}}</p>
+                            <span>{{about.text}}</span>
                         </div>
                     </div>
                 </div>
@@ -200,10 +188,9 @@
                             </span>
                             <div class="team-container">
                                 <div class="team">
-                                    <div 
-                                    @click="setIuser(i)"
+                                    <div                              
                                     v-for="(team,i) in teamExpert" class="photo-team">
-                                        <img :src="team.img" alt="">
+                                        <img @click="setIuser(i)" :src="team.img" alt="">
                                         <div class="info-img">
                                             <p>{{team.name}}</p>
                                             <span>{{team.category}}</span>
