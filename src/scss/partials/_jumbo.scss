@@ -10,6 +10,7 @@
         align-items: center;
         img{
             height: 40px;
+            padding-right: 200px;
         }
         .info-jumbo{
             *{
@@ -19,6 +20,11 @@
             a{
                 text-decoration: none;
                 color: $shark;
+                &:hover{
+                    font-size: 18px;
+                    color: $elfgreen;
+                    font-weight: bold;
+                }
             }
             button{
                 background-color: $elfgreen;

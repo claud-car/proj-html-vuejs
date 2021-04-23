@@ -9,13 +9,21 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+button{
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+
+    }
+}
+
 
 //colors
 $navbar-text-color:#e8ecea9e;
 //material design
 $limedspruce: #21333E;
 $diserria: #DC945C;
-$elfgreen: #078282;
+$elfgreen: #E94649;
 $cloudy: #A5A09D;
 $elm:#22918E; 
 //median cut
@@ -34,3 +42,5 @@ $koromiko:#FEB169;
 $fountainblue:#45BBBC;
 $piper:#C86F29;
 $anakiwa:#96FEFE;
+
+$prova: #058283

@@ -9,349 +9,353 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="left-part-navbar">
-                <p><i class="fas fa-clock"></i> Open Hours: Mon - Sat - 9:00 - 18:00 </p>
-            </div>
-            <div class="right-part-navbar">
-                <button><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</button>
-                <button><i class="fas fa-envelope"></i> hello@example.com</button>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin-in"></i>
-            </div>
-        </div>
-        <div class="jumbo">
-            <div class="header-jumbo">
-                <div class="logo">
-                    <img src="img/logo.svg" alt="">
+    <div id="root">
+        <header>
+            <div class="navbar">
+                <div class="left-part-navbar">
+                    <p><i class="fas fa-clock"></i> Open Hours: Mon - Sat - 9:00 - 18:00 </p>
                 </div>
-                <div class="info-jumbo">
-                    <a href="">HOME</a>
-                    <a href="">ABOUT</a>
-                    <a href="">SERVICE</a>
-                    <a href="">PROCESS</a>
-                    <a href="">TEAM</a>
-                    <a href="">BLOG</a>
-                    <button>GET IN TOUCH</button>
+                <div class="right-part-navbar">
+                    <button><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</button>
+                    <button><i class="fas fa-envelope"></i> hello@example.com</button>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
                 </div>
             </div>
-            <div class="container-presentation">
-                <div class="presentation-page">
-                    <p>FUSIONS & ACQUISITIONS</p>
-                    <h1>Insurance <br> Consulting</h1>
-                    <div class="first-form form">
-                        <input  placeholder="Name" type="text">
-                        <input  placeholder="Email" type="text">
+            <div class="jumbo">
+                <div class="header-jumbo">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="">
                     </div>
-                    <div class="second-form form">
-                        <input  placeholder="Phone" type="text">
-                        <select  value="More info">
-                            <option  value="More info">More info</option>
-                            <option  value="">Private</option>
-                            <option  value="">Agency</option>
-                        </select>
-                    </div>
-                    <div class="buttons-presentation">
-                        <button>GET IN TOUCH</button>
-                        <button>READ MORE</button>
+                    <div class="info-jumbo">
+                        <a v-for="text in textInsertJumbo" href="">{{text.jumbo}}</a>
+                        <!-- <a href="">{{text.jumbo}}</a>
+                        <a href="">{{text.jumbo}}</a>
+                        <a href="">{{text.jumbo}}</a>
+                        <a href="">{{text.jumbo}}</a>
+                        <a href="">{{text.jumbo}}</a> -->
+                        <button v-for="text in buttonText">{{text.button}}</button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="about">
-            <div class="network-container">
-                <div class="network-left">
-                    <p id="about-title">ABOUT THE NETWORK</p>
-                    <h2><label>The</label> Company</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Ipsa, incidunt maiores blanditiis quae modi possimus asperiores
-                         earum natus recusandae quasi! Itaque quod tempore porro 
-                         quidem adipisci quos possimus earum minus?
-                    </p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                         Culpa quidem eum debitis quod saepe laboriosam.
-                    </p>
+                <div class="container-presentation">
+                    <div class="presentation-page">
+                        <p>FUSIONS & ACQUISITIONS</p>
+                        <h1>Insurance <br> Consulting</h1>
+                        <div class="first-form form">
+                            <input  placeholder="Name" type="text">
+                            <input  placeholder="Email" type="text">
+                        </div>
+                        <div class="second-form form">
+                            <input  placeholder="Phone" type="text">
+                            <select  value="More info">
+                                <option  value="More info">More info</option>
+                                <option  value="">Private</option>
+                                <option  value="">Agency</option>
+                            </select>
+                        </div>
+                        <div class="buttons-presentation">
+                            <button v-for="text in buttonText">{{text.button}}</button>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="network-right">
-                    <div class="info-about">
-                        <p><i class="fas fa-medal"></i>Tradition</p>
+            </div>
+        </header>
+        <main>
+            <section class="about">
+                <div class="network-container">
+                    <div class="network-left">
+                        <p id="about-title">ABOUT THE NETWORK</p>
+                        <h2><label>The</label> Company</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ipsa, incidunt maiores blanditiis quae modi possimus asperiores
+                             earum natus recusandae quasi! Itaque quod tempore porro 
+                             quidem adipisci quos possimus earum minus?
+                        </p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                             Culpa quidem eum debitis quod saepe laboriosam.
+                        </p>
+                    </div>
+                    <div class="network-right">
+                        <div class="info-about">
+                            <p><i class="fas fa-medal"></i>Tradition</p>
+                            <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
+                        </div>
+                        <div class="info-about">
+                            <p><i class="fas fa-lock"></i>Secutiry</p>
+                            <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
+                        </div>
+                        <div class="info-about">
+                            <p><i class="fas fa-edit"></i>Certificate</p>
+                            <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
+                        </div>
+                        <div class="info-about">
+                            <p><i class="fas fa-graduation-cap"></i>Expertise</p>
+                            <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="business-area">
+                <div class="business-container">
+                    <div class="business-title">
+                        <p>OUR BUSINESS AREA</p>
+                        <H2>Excellence in <label>Services</label></H2>
+                        <div class="text-business">
+                            <span>We are leaders in providing consultancy services with a set 
+                                of cutting-edge technologies and a team of <br> experienced and 
+                                renowned professionals. These are some options that
+                                you can hire.
+                            </span>
+                            <button>SEE ALL</button>
+                        </div>
+                    </div>
+                    <div class="business-infos mrg-right-bot">
+                        <div class="symbol">
+                            <i class="fas fa-network-wired"></i>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <p>Audit & Assurance</p>
                         <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
                     </div>
-                    <div class="info-about">
-                        <p><i class="fas fa-lock"></i>Secutiry</p>
+                    <div class="business-infos mrg-right-bot">
+                        <div class="symbol">
+                            <i class="fas fa-network-wired"></i>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <p>Financial Advisory</p>
                         <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
                     </div>
-                    <div class="info-about">
-                        <p><i class="fas fa-edit"></i>Certificate</p>
+                    <div class="business-infos">
+                        <div class="symbol">
+                            <i class="fas fa-chart-bar"></i>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <p>Analytics and M&A</p>
                         <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
                     </div>
-                    <div class="info-about">
-                        <p><i class="fas fa-graduation-cap"></i>Expertise</p>
+                    <div class="business-infos mrg-right">
+                        <div class="symbol">
+                            <i class="fas fa-plane"></i>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <p>Middle Marketing</p>
+                        <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
+                    </div>
+                    <div class="business-infos mrg-right">
+                        <div class="symbol">
+                            <i class="fas fa-globe-europe"></i>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <p>Legal Consulting</p>
+                        <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
+                    </div>
+                    <div class="business-infos">
+                        <div class="symbol">
+                            <i class="fas fa-inbox"></i>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <p>Regulatory Risk</p>
                         <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="business-area">
-            <div class="business-container">
-                <div class="business-title">
-                    <p>OUR BUSINESS AREA</p>
-                    <H2>Excellence in <label>Services</label></H2>
-                    <div class="text-business">
-                        <span>We are leaders in providing consultancy services with a set 
-                            of cutting-edge technologies and a team of <br> experienced and 
-                            renowned professionals. These are some options that
-                            you can hire.
-                        </span>
-                        <button>SEE ALL</button>
+            </section>
+            <section class="management">
+                <div class="title-management">
+                    <p>HOW IT WORKS IN PRACTICE</p>
+                    <h2><label>Process</label> Management</h2>
+                    <span>We work with inovative methodologies to ensure that the entire reformatting
+                         process is done from start to finish as planned.</span>
+                </div>
+                <div class="line-part">
+                    <img src="img/Line.png" alt="">
+                    <div class="info-management">
+                        <div class="infos">
+                            <p>Collection of Information</p>
+                            <span>Lorem ipsum dolor sit amet consectetur</span>
+                        </div>
+                        <div class="infos">
+                            <p>Strategic planning</p>
+                            <span>Lorem ipsum dolor sit amet consectetur</span>
+                        </div>
+                        <div class="infos">
+                            <p>Assignment of responsibilities</p>
+                            <span>Lorem ipsum dolor sit amet consectetur</span>
+                        </div>
+                        <div class="infos">
+                            <p>Formatting process</p>
+                            <span>Lorem ipsum dolor sit amet consectetur</span>
+                        </div>
+                        <div class="infos">
+                            <p>Continuity formalization</p>
+                            <span>Lorem ipsum dolor sit amet consectetur</span>
+                        </div>
                     </div>
                 </div>
-                <div class="business-infos mrg-right-bot">
-                    <div class="symbol">
-                        <i class="fas fa-network-wired"></i>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                    <p>Audit & Assurance</p>
-                    <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
-                </div>
-                <div class="business-infos mrg-right-bot">
-                    <div class="symbol">
-                        <i class="fas fa-network-wired"></i>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                    <p>Financial Advisory</p>
-                    <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
-                </div>
-                <div class="business-infos">
-                    <div class="symbol">
-                        <i class="fas fa-chart-bar"></i>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                    <p>Analytics and M&A</p>
-                    <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
-                </div>
-                <div class="business-infos mrg-right">
-                    <div class="symbol">
-                        <i class="fas fa-plane"></i>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                    <p>Middle Marketing</p>
-                    <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
-                </div>
-                <div class="business-infos mrg-right">
-                    <div class="symbol">
-                        <i class="fas fa-globe-europe"></i>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                    <p>Legal Consulting</p>
-                    <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
-                </div>
-                <div class="business-infos">
-                    <div class="symbol">
-                        <i class="fas fa-inbox"></i>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                    <p>Regulatory Risk</p>
-                    <span>Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
-                </div>
-            </div>
-        </section>
-        <section class="management">
-            <div class="title-management">
-                <p>HOW IT WORKS IN PRACTICE</p>
-                <h2><label>Process</label> Management</h2>
-                <span>We work with inovative methodologies to ensure that the entire reformatting
-                     process is done from start to finish as planned.</span>
-            </div>
-            <div class="line-part">
-                <img src="img/Line.png" alt="">
-                <div class="info-management">
-                    <div class="infos">
-                        <p>Collection of Information</p>
-                        <span>Lorem ipsum dolor sit amet consectetur</span>
-                    </div>
-                    <div class="infos">
-                        <p>Strategic planning</p>
-                        <span>Lorem ipsum dolor sit amet consectetur</span>
-                    </div>
-                    <div class="infos">
-                        <p>Assignment of responsibilities</p>
-                        <span>Lorem ipsum dolor sit amet consectetur</span>
-                    </div>
-                    <div class="infos">
-                        <p>Formatting process</p>
-                        <span>Lorem ipsum dolor sit amet consectetur</span>
-                    </div>
-                    <div class="infos">
-                        <p>Continuity formalization</p>
-                        <span>Lorem ipsum dolor sit amet consectetur</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="expert">
-            <div class="expert-container">
-                <p>WE LIKE WHAT WE DO</p>
-                <div class="expert-overview">
-                    <div class="team-expert">
-                        <h2><label>Team</label> of Experts</h2>
-                        <span>Ethics and integrity are the bases on which our professionals build their careers. <br>
-                            They are fundamentals that become daily attitudes.
-                        </span>
-                        <div class="team-container">
-                            <div class="team">
-                                <div class="photo-team">
-                                    <img src="img/team-1.jpg" alt="">
-                                    <div class="info-img">
-                                        <p>David Cooper</p>
-                                        <span>CTO & CO-FOUNDER</span>
-                                        <i class="fab fa-facebook-f"></i>
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-linkedin-in"></i>
+            </section>
+            <section class="expert">
+                <div class="expert-container">
+                    <p>WE LIKE WHAT WE DO</p>
+                    <div class="expert-overview">
+                        <div class="team-expert">
+                            <h2><label>Team</label> of Experts</h2>
+                            <span>Ethics and integrity are the bases on which our professionals build their careers. <br>
+                                They are fundamentals that become daily attitudes.
+                            </span>
+                            <div class="team-container">
+                                <div class="team">
+                                    <div v-for="team in teamExpert" class="photo-team">
+                                        <img :src="team.img" alt="">
+                                        <div class="info-img">
+                                            <p>{{team.name}}</p>
+                                            <span>{{team.category}}</span>
+                                            <i class="fab fa-facebook-f"></i>
+                                            <i class="fab fa-twitter"></i>
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="photo-team">
-                                    <img src="img/team-3.jpg" alt="">
-                                    <div class="info-img">
-                                        <p>Oliver Jones</p>
-                                        <span>CHIEF PROCUREMENT</span>
-                                        <i class="fab fa-facebook-f"></i>
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-linkedin-in"></i>
+                                    <!-- <div class="photo-team">
+                                        <img src="img/team-3.jpg" alt="">
+                                        <div class="info-img">
+                                            <p>Oliver Jones</p>
+                                            <span>CHIEF PROCUREMENT</span>
+                                            <i class="fab fa-facebook-f"></i>
+                                            <i class="fab fa-twitter"></i>
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="photo-team">
-                                    <img src="img/team-2.jpg" alt="">
-                                    <div class="info-img">
-                                        <p>Emma Lopez</p>
-                                        <span>CHIEF MARKETING</span>
-                                        <i class="fab fa-facebook-f"></i>
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-linkedin-in"></i>
+                                    <div class="photo-team">
+                                        <img src="img/team-2.jpg" alt="">
+                                        <div class="info-img">
+                                            <p>Emma Lopez</p>
+                                            <span>CHIEF MARKETING</span>
+                                            <i class="fab fa-facebook-f"></i>
+                                            <i class="fab fa-twitter"></i>
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="photo-team last-photo">
-                                    <img src="img/team-4.jpg" alt="">
-                                    <div class="info-img">
-                                        <p>T.Johnson</p>
-                                        <span>CEO & PRESIDENT</span>
-                                        <i class="fab fa-facebook-f"></i>
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </div>
+                                    <div class="photo-team last-photo">
+                                        <img src="img/team-4.jpg" alt="">
+                                        <div class="info-img">
+                                            <p>T.Johnson</p>
+                                            <span>CEO & PRESIDENT</span>
+                                            <i class="fab fa-facebook-f"></i>
+                                            <i class="fab fa-twitter"></i>
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
+                        <div class="speech">
+                            <p>President Speech</p>
+                            <p class="text-speech">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+                            <p class="text-speech">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sapiente maxime commodi assumenda.Lorem ipsum dolor sit amet</p>
+                            <p class="text-speech">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
+                            <p id="name-speech">T.Johnson</p>
+                        </div>
                     </div>
-                    <div class="speech">
-                        <p>President Speech</p>
-                        <p class="text-speech">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
-                        <p class="text-speech">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sapiente maxime commodi assumenda.Lorem ipsum dolor sit amet</p>
-                        <p class="text-speech">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
-                        <p id="name-speech">T.Johnson</p>
+                </div>
+            </section>
+            <div class="news">
+                <div class="news-container">
+                    <p>OUR EDITORIAL CONTENT</p>
+                    <h2>Latest <label>News</label></h2>
+                    <div class="text-button">
+                        <span>Every week we publish content about what is best in the business world.</span>
+                        <button>SEE ALL</button>
+                    </div>
+                    <div class="publish news-1">
+                        <p>Increasing creativity is possible for everyone</p>
+                    </div>
+                    <div class="publish news-2 mrg-bet">
+                        <p>Because market researchis part of the business plan</p>
+                    </div>
+                    <div class="publish news-3">
+                        <p>Working from home is now a trend</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="news">
-            <div class="news-container">
-                <p>OUR EDITORIAL CONTENT</p>
-                <h2>Latest <label>News</label></h2>
-                <div class="text-button">
-                    <span>Every week we publish content about what is best in the business world.</span>
-                    <button>SEE ALL</button>
+        </main>
+        <footer>
+            <section class="newsletter">
+                <div class="newsletter-container">
+                    <div class="newsletter-box">
+                        <p>NEWSLETTER</p>
+                        <h2><label>Know</label> First</h2>
+                        <span>Follow closely and receive content about our Company
+                            and the news of the current market.
+                        </span>
+                    </div>
+                    <div class="newsletter-box">
+                        <input  placeholder="Name" type="text">
+                        <input  placeholder="Email" type="text">
+                        <button>SUBSCRIBE</button>
+                    </div>
                 </div>
-                <div class="publish news-1">
-                    <p>Increasing creativity is possible for everyone</p>
-                </div>
-                <div class="publish news-2 mrg-bet">
-                    <p>Because market researchis part of the business plan</p>
-                </div>
-                <div class="publish news-3">
-                    <p>Working from home is now a trend</p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <section class="newsletter">
-            <div class="newsletter-container">
-                <div class="newsletter-box">
-                    <p>NEWSLETTER</p>
-                    <h2><label>Know</label> First</h2>
-                    <span>Follow closely and receive content about our Company
-                        and the news of the current market.
-                    </span>
-                </div>
-                <div class="newsletter-box">
-                    <input  placeholder="Name" type="text">
-                    <input  placeholder="Email" type="text">
-                    <button>SUBSCRIBE</button>
-                </div>
-            </div>
-        </section>
-        <section class="get-in-touch">
-            <div class="get-container">
-                <div class="info-company">
-                    <img src="img/logo.svg" alt="">
-                    <span>A functional HTML Template for Corporate & Business.</span>
-                    <span><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</span>
-                    <span><i class="fas fa-envelope"></i>hello@example.com</span>
-                    <span><i class="fas fa-map-marker-alt"></i>Main Avenue, 987</span>
-                    <button>GET IN TOUCH</button>
-                </div>
-                <div class="more-info">
-                    <ul>
-                        <li class="header-li">About</li>
-                        <li><i class="fas fa-chevron-right"></i>The Company</li>
-                        <li><i class="fas fa-chevron-right"></i>Institutional</li>
-                        <li><i class="fas fa-chevron-right"></i>Social & Events</li>
-                        <li><i class="fas fa-chevron-right"></i>Innovation</li>
-                        <li><i class="fas fa-chevron-right"></i>Enviroment</li>
-                        <li><i class="fas fa-chevron-right"></i>Technology</li>
-                    </ul>
-                </div>
-                <div class="more-info">
-                    <ul>
-                        <li class="header-li">Services</li>
-                        <li><i class="fas fa-chevron-right"></i>Audit & Assurance</li>
-                        <li><i class="fas fa-chevron-right"></i>Financial Advisory</li>
-                        <li><i class="fas fa-chevron-right"></i>Analytics M&A</li>
-                        <li><i class="fas fa-chevron-right"></i>Middle Marketing</li>
-                        <li><i class="fas fa-chevron-right"></i>Legal Consulting</li>
-                        <li><i class="fas fa-chevron-right"></i>Regulatory Risk</li>
-                    </ul>
-                </div>
-                <div class="more-info">
-                    <ul>
-                        <li class="header-li">Support</li>
-                        <li><i class="fas fa-chevron-right"></i>Responasbility</li>
-                        <li><i class="fas fa-chevron-right"></i>Termo Of Use</li>
-                        <li><i class="fas fa-chevron-right"></i>About Cookies</li>
-                        <li><i class="fas fa-chevron-right"></i>Privacy Policy</li>
-                        <li><i class="fas fa-chevron-right"></i>Accessibility</li>
-                        <li><i class="fas fa-chevron-right"></i>Information</li>
-                    </ul>
-
-                </div>
-            </div>
-        </section>
-        <div class="end-page">
-            <div class="end-page-container">
-                <div class="end-box">
-                    <span>Enjoy the low price. We are tracking any intention of piracy.</span>
-                </div>
-                <div class="end-box">
-                    <span><i class="far fa-copyright"></i> 2020 NEXGEN is Proudly Powered by <label>Codings</label></span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+            </section>
+            <section class="get-in-touch">
+                <div class="get-container">
+                    <div class="info-company">
+                        <img src="img/logo.svg" alt="">
+                        <span>A functional HTML Template for Corporate & Business.</span>
+                        <span><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</span>
+                        <span><i class="fas fa-envelope"></i>hello@example.com</span>
+                        <span><i class="fas fa-map-marker-alt"></i>Main Avenue, 987</span>
+                        <button v-for="text in buttonText">{{text.button}}</button>
+                    </div>
+                    <div class="more-info">
+                        <ul>
+                            <li class="header-li">About</li>
+                            <li><i class="fas fa-chevron-right"></i>The Company</li>
+                            <li><i class="fas fa-chevron-right"></i>Institutional</li>
+                            <li><i class="fas fa-chevron-right"></i>Social & Events</li>
+                            <li><i class="fas fa-chevron-right"></i>Innovation</li>
+                            <li><i class="fas fa-chevron-right"></i>Enviroment</li>
+                            <li><i class="fas fa-chevron-right"></i>Technology</li>
+                        </ul>
+                    </div>
+                    <div class="more-info">
+                        <ul>
+                            <li class="header-li">Services</li>
+                            <li><i class="fas fa-chevron-right"></i>Audit & Assurance</li>
+                            <li><i class="fas fa-chevron-right"></i>Financial Advisory</li>
+                            <li><i class="fas fa-chevron-right"></i>Analytics M&A</li>
+                            <li><i class="fas fa-chevron-right"></i>Middle Marketing</li>
+                            <li><i class="fas fa-chevron-right"></i>Legal Consulting</li>
+                            <li><i class="fas fa-chevron-right"></i>Regulatory Risk</li>
+                        </ul>
+                    </div>
+                    <div class="more-info">
+                        <ul>
+                            <li class="header-li">Support</li>
+                            <li><i class="fas fa-chevron-right"></i>Responasbility</li>
+                            <li><i class="fas fa-chevron-right"></i>Termo Of Use</li>
+                            <li><i class="fas fa-chevron-right"></i>About Cookies</li>
+                            <li><i class="fas fa-chevron-right"></i>Privacy Policy</li>
+                            <li><i class="fas fa-chevron-right"></i>Accessibility</li>
+                            <li><i class="fas fa-chevron-right"></i>Information</li>
+                        </ul>
     
+                    </div>
+                </div>
+            </section>
+            <div class="end-page">
+                <div class="end-page-container">
+                    <div class="end-box">
+                        <span>Enjoy the low price. We are tracking any intention of piracy.</span>
+                    </div>
+                    <div class="end-box">
+                        <span><i class="far fa-copyright"></i> 2020 NEXGEN is Proudly Powered by <label>Codings</label></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>  
+    <script src="dist/js/app.js" charset="utf-8"></script>
 </body>
 </html>

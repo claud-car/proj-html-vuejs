@@ -9,6 +9,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 header {
   background-color: #21333E;
 }
@@ -53,6 +58,7 @@ header .navbar .right-part-navbar *:hover {
 }
 .jumbo .header-jumbo img {
   height: 40px;
+  padding-right: 200px;
 }
 .jumbo .header-jumbo .info-jumbo * {
   padding: 0 20px;
@@ -62,8 +68,13 @@ header .navbar .right-part-navbar *:hover {
   text-decoration: none;
   color: #1C2224;
 }
+.jumbo .header-jumbo .info-jumbo a:hover {
+  font-size: 18px;
+  color: #E94649;
+  font-weight: bold;
+}
 .jumbo .header-jumbo .info-jumbo button {
-  background-color: #078282;
+  background-color: #E94649;
   color: #fff;
   padding: 15px 25px;
   border-radius: 5px;
@@ -113,7 +124,7 @@ header .navbar .right-part-navbar *:hover {
   width: 47.5%;
 }
 .jumbo .container-presentation .presentation-page button {
-  background-color: #078282;
+  background-color: #E94649;
   color: #fff;
   padding: 15px 25px;
   border-radius: 5px;
@@ -122,8 +133,8 @@ header .navbar .right-part-navbar *:hover {
 }
 .jumbo .container-presentation .presentation-page button:last-child {
   background-color: #E8ECEA;
-  color: #078282;
-  border: 1px solid #078282;
+  color: #E94649;
+  border: 1px solid #E94649;
 }
 
 .jumbo {
@@ -140,6 +151,7 @@ header .navbar .right-part-navbar *:hover {
 }
 .jumbo .header-jumbo img {
   height: 40px;
+  padding-right: 200px;
 }
 .jumbo .header-jumbo .info-jumbo * {
   padding: 0 20px;
@@ -149,8 +161,13 @@ header .navbar .right-part-navbar *:hover {
   text-decoration: none;
   color: #1C2224;
 }
+.jumbo .header-jumbo .info-jumbo a:hover {
+  font-size: 18px;
+  color: #E94649;
+  font-weight: bold;
+}
 .jumbo .header-jumbo .info-jumbo button {
-  background-color: #078282;
+  background-color: #E94649;
   color: #fff;
   padding: 15px 25px;
   border-radius: 5px;
@@ -200,7 +217,7 @@ header .navbar .right-part-navbar *:hover {
   width: 47.5%;
 }
 .jumbo .container-presentation .presentation-page button {
-  background-color: #078282;
+  background-color: #E94649;
   color: #fff;
   padding: 15px 25px;
   border-radius: 5px;
@@ -209,8 +226,8 @@ header .navbar .right-part-navbar *:hover {
 }
 .jumbo .container-presentation .presentation-page button:last-child {
   background-color: #E8ECEA;
-  color: #078282;
-  border: 1px solid #078282;
+  color: #E94649;
+  border: 1px solid #E94649;
 }
 
 main .about {
@@ -230,7 +247,7 @@ main .about .network-container .network-left {
   padding-right: 60px;
 }
 main .about .network-container .network-left #about-title {
-  color: #078282;
+  color: #E94649;
   font-size: 14px;
   margin: 20px 0;
   font-weight: bold;
@@ -264,7 +281,7 @@ main .about .network-container .network-right .info-about {
   justify-content: space-around;
 }
 main .about .network-container .network-right .info-about i {
-  color: #078282;
+  color: #E94649;
   margin-right: 10px;
   font-size: 18px;
 }
@@ -291,7 +308,7 @@ main .business-area .business-container .business-title {
 main .business-area .business-container .business-title p {
   font-weight: bold;
   font-size: 14px;
-  color: #078282;
+  color: #E94649;
 }
 main .business-area .business-container .business-title h2 {
   color: #121117;
@@ -300,7 +317,7 @@ main .business-area .business-container .business-title h2 {
 }
 main .business-area .business-container .business-title h2 label {
   background-color: #07828242;
-  color: #078282;
+  color: #E94649;
   padding: 0 10px;
 }
 main .business-area .business-container .business-title .text-business {
@@ -312,7 +329,7 @@ main .business-area .business-container .business-title .text-business span {
   color: #A5A09D;
 }
 main .business-area .business-container .business-title .text-business button {
-  background-color: #078282;
+  background-color: #E94649;
   color: #e8ecea9e;
   padding: 5px 15px;
   border-radius: 3px;
@@ -329,7 +346,7 @@ main .business-area .business-container .business-infos .symbol {
   align-items: center;
   justify-content: space-between;
   font-size: 40px;
-  color: #078282;
+  color: #E94649;
 }
 main .business-area .business-container .business-infos p {
   color: #121117;
@@ -358,7 +375,7 @@ main .management .title-management {
 main .management .title-management p {
   font-size: 14px;
   font-weight: bold;
-  color: #078282;
+  color: #E94649;
 }
 main .management .title-management h2 {
   color: #121117;
@@ -366,7 +383,7 @@ main .management .title-management h2 {
   margin: 30px 0;
 }
 main .management .title-management h2 label {
-  color: #078282;
+  color: #E94649;
   background-color: #07828242;
   padding: 5px 10px;
 }
@@ -405,7 +422,7 @@ main .expert .expert-container {
 main .expert .expert-container p {
   font-weight: bold;
   font-size: 14px;
-  color: #078282;
+  color: #E94649;
 }
 main .expert .expert-container .expert-overview {
   display: flex;
@@ -431,13 +448,13 @@ main .expert .expert-container .expert-overview .team-expert .team-container .te
   flex-wrap: wrap;
   padding-top: 25px;
 }
-main .expert .expert-container .expert-overview .team-expert .team-container .team .last-photo {
-  margin-left: 9px;
-}
 main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team {
   display: flex;
   margin-right: 20px;
   margin-bottom: 10px;
+}
+main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team:last-child {
+  margin-left: -4px;
 }
 main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team img {
   width: 100px;
@@ -460,7 +477,7 @@ main .expert .expert-container .expert-overview .team-expert .team-container .te
   margin: 20px 0;
 }
 main .expert .expert-container .expert-overview .team-expert .team-container .team .photo-team .info-img i {
-  color: #078282;
+  color: #E94649;
   background-color: #07828242;
   border-radius: 50%;
   padding: 9px 11px;
@@ -468,7 +485,7 @@ main .expert .expert-container .expert-overview .team-expert .team-container .te
 main .expert .expert-container .expert-overview .speech {
   width: 35%;
   padding: 35px;
-  background-color: #078282;
+  background-color: #E94649;
   border-radius: 10px;
   height: 430px;
 }
@@ -494,7 +511,7 @@ main .news .news-container {
 }
 main .news .news-container p {
   font-size: 14px;
-  color: #078282;
+  color: #E94649;
   font-weight: bold;
 }
 main .news .news-container h2 {
@@ -503,7 +520,7 @@ main .news .news-container h2 {
   margin: 30px 0;
 }
 main .news .news-container h2 label {
-  color: #078282;
+  color: #E94649;
   background-color: #07828242;
   padding: 5px 10px;
 }
@@ -517,7 +534,7 @@ main .news .news-container .text-button span {
   color: #A5A09D;
 }
 main .news .news-container .text-button button {
-  background-color: #078282;
+  background-color: #E94649;
   font-size: 15px;
   padding: 10px 15px;
   color: #fff;
@@ -595,7 +612,7 @@ footer .newsletter .newsletter-container .newsletter-box {
   padding-right: 120px;
 }
 footer .newsletter .newsletter-container .newsletter-box p {
-  color: #078282;
+  color: #E94649;
   font-size: 18px;
 }
 footer .newsletter .newsletter-container .newsletter-box h2 {
@@ -604,7 +621,7 @@ footer .newsletter .newsletter-container .newsletter-box h2 {
   color: #fff;
 }
 footer .newsletter .newsletter-container .newsletter-box h2 label {
-  color: #078282;
+  color: #E94649;
   background-color: #07828242;
   padding: 5px 10px;
 }
@@ -624,7 +641,7 @@ footer .newsletter .newsletter-container .newsletter-box input {
   background: rgba(255, 255, 255, 0.4);
 }
 footer .newsletter .newsletter-container .newsletter-box button {
-  background-color: #078282;
+  background-color: #E94649;
   font-size: 15px;
   padding: 10px 15px;
   color: #fff;
@@ -653,7 +670,7 @@ footer .get-in-touch .get-container .info-company span {
   padding: 17px 0;
 }
 footer .get-in-touch .get-container .info-company button {
-  border: 1px solid #078282;
+  border: 1px solid #E94649;
   background: transparent;
   font-size: 15px;
   padding: 10px 15px;
@@ -703,5 +720,5 @@ footer .end-page .end-page-container span {
   color: #A5A09D;
 }
 footer .end-page .end-page-container span label {
-  color: #078282;
+  color: #E94649;
 }
