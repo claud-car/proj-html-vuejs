@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/master.css">
+    <link rel="stylesheet" href="dist/assets/master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title>Document</title>
 </head>
@@ -30,11 +30,6 @@
                     </div>
                     <div class="info-jumbo">
                         <a v-for="text in textInsertJumbo" href="">{{text.jumbo}}</a>
-                        <!-- <a href="">{{text.jumbo}}</a>
-                        <a href="">{{text.jumbo}}</a>
-                        <a href="">{{text.jumbo}}</a>
-                        <a href="">{{text.jumbo}}</a>
-                        <a href="">{{text.jumbo}}</a> -->
                         <button v-for="text in buttonText">{{text.button}}</button>
                     </div>
                 </div>
@@ -205,7 +200,9 @@
                             </span>
                             <div class="team-container">
                                 <div class="team">
-                                    <div v-for="team in teamExpert" class="photo-team">
+                                    <div 
+                                    @click="setIuser(i)"
+                                    v-for="(team,i) in teamExpert" class="photo-team">
                                         <img :src="team.img" alt="">
                                         <div class="info-img">
                                             <p>{{team.name}}</p>
@@ -215,45 +212,15 @@
                                             <i class="fab fa-linkedin-in"></i>
                                         </div>
                                     </div>
-                                    <!-- <div class="photo-team">
-                                        <img src="img/team-3.jpg" alt="">
-                                        <div class="info-img">
-                                            <p>Oliver Jones</p>
-                                            <span>CHIEF PROCUREMENT</span>
-                                            <i class="fab fa-facebook-f"></i>
-                                            <i class="fab fa-twitter"></i>
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </div>
-                                    </div>
-                                    <div class="photo-team">
-                                        <img src="img/team-2.jpg" alt="">
-                                        <div class="info-img">
-                                            <p>Emma Lopez</p>
-                                            <span>CHIEF MARKETING</span>
-                                            <i class="fab fa-facebook-f"></i>
-                                            <i class="fab fa-twitter"></i>
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </div>
-                                    </div>
-                                    <div class="photo-team last-photo">
-                                        <img src="img/team-4.jpg" alt="">
-                                        <div class="info-img">
-                                            <p>T.Johnson</p>
-                                            <span>CEO & PRESIDENT</span>
-                                            <i class="fab fa-facebook-f"></i>
-                                            <i class="fab fa-twitter"></i>
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
                         <div class="speech">
-                            <p>President Speech</p>
-                            <p class="text-speech">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
-                            <p class="text-speech">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sapiente maxime commodi assumenda.Lorem ipsum dolor sit amet</p>
-                            <p class="text-speech">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet</p>
-                            <p id="name-speech">T.Johnson</p>
+                            <p>{{teamExpert[index].speechTitle}}</p>
+                            <p class="text-speech">{{teamExpert[index].speechText1}}</p>
+                            <p class="text-speech">{{teamExpert[index].speechText2}}</p>
+                            <p class="text-speech">{{teamExpert[index].speechText3}}</p>
+                            <p id="name-speech">{{teamExpert[index].name}}</p>
                         </div>
                     </div>
                 </div>

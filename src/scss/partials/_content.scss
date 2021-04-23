@@ -262,14 +262,13 @@ main{
                     border-radius: 10px;
                     height: 430px;
                     p{
-                        color: $white;
+                        color: $white !important;
                         font-size: 21px;
                         margin-bottom: 10px;
                         font-weight: bold;
                     }
                     .text-speech{
                         font-size: 16px;
-                        color: $cloudy;
                         padding: 15px 0;
                         font-weight: normal;
                     }
@@ -317,7 +316,7 @@ main{
                 }
             }
             .news-1{
-                background-image: url('../img/news-1.jpg');
+                background-image: url('../../img/news-1.jpg');
                 background-position: center;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
@@ -326,7 +325,7 @@ main{
                 }
             }
             .news-2{
-                background-image: url('../img/news-2.jpg');
+                background-image: url('../../img/news-2.jpg');
                 background-position: center;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
@@ -335,7 +334,7 @@ main{
                 }
             }
             .news-3{
-                background-image: url('../img/news-3.jpg');
+                background-image: url('../../img/news-3.jpg');
                 background-position: center;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
