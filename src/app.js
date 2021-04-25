@@ -88,6 +88,94 @@ var app = new Vue({
                 text: `Lorem ipsum dolor sit amet consectetur adipiscing elit.`,
                 class: "fa-graduation-cap"
             }
+        ],
+        aboutList:[
+            {headerList: "About"}
+        ],
+        listAboutFooter:[
+            {
+                class: "fa-chevron-right",
+                list: "The company"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Institutional"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Social & Events"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Innovation"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Enviroment"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Technology"
+            },
+        ],
+        serviceList:[
+            {headerList:"Services"}
+        ],
+        listServiceFooter:[
+            {
+                class: "fa-chevron-right",
+                list: "Audit & Assurance"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Financial Advisory"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Analytics M&A"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Middle Marketing"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Legal Consulting"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Regulatory Risk"
+            },
+        ],
+        supportList:[
+            {headerList:"Support"}
+        ],
+        listSupportFooter:[
+            {
+                class: "fa-chevron-right",
+                list: "Responasbility"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Termo Of Use"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "About Cookies"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Privacy Policy"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Accessibility"
+            },
+            {
+                class: "fa-chevron-right",
+                list: "Information"
+            },
+
         ]
     },
     methods:{
