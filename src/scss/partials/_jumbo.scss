@@ -3,6 +3,8 @@
     background-image: url('../../img/bg-6.jpg');
     background-position: center;
     background-color: $white;
+    background-repeat: no-repeat;
+    background-size: cover;
     .header-jumbo{
         padding: 15px 20%;
         display: flex;

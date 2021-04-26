@@ -53,6 +53,8 @@ header .navbar .right-part-navbar *:hover {
   background-image: url("../../img/bg-6.jpg");
   background-position: center;
   background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .jumbo .header-jumbo {
   padding: 15px 20%;
@@ -146,6 +148,8 @@ header .navbar .right-part-navbar *:hover {
   background-image: url("../../img/bg-6.jpg");
   background-position: center;
   background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .jumbo .header-jumbo {
   padding: 15px 20%;
