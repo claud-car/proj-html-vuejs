@@ -261,26 +261,29 @@
                     </div>
                     <div class="more-info">
                         <ul >
-                            <li v-for="list in aboutList" class="header-li">{{list.headerList}}</li>
-                            <li v-for="list in listAboutFooter"><i :class="`fas ${list.class}`"></i>{{list.list}}</li>
+                            <p v-for="list in aboutList" class="header-li">{{list.headerList}}</p>
+                            <li v-for="list in listAboutFooter"><i :class="`fas ${list.class}`"></i><a href="">{{list.list}}</a></li>
                         </ul>
                     </div>
                     <div class="more-info">
                         <ul>
-                            <li v-for="list in serviceList" class="header-li">{{list.headerList}}</li>
-                            <li v-for="list in listServiceFooter"><i :class="`fas ${list.class}`"></i>{{list.list}}</li>
+                            <p v-for="list in serviceList" class="header-li">{{list.headerList}}</p>
+                            <li v-for="list in listServiceFooter"><i :class="`fas ${list.class}`"></i><a href="">{{list.list}}</a></li>
                         </ul>
                     </div>
                     <div class="more-info">
                         <ul>
-                            <li v-for="list in supportList" class="header-li">{{list.headerList}}</li>
-                            <li v-for="list in listSupportFooter"><i :class="`fas ${list.class}`"></i>{{list.list}}</li>
+                            <p v-for="list in supportList" class="header-li">{{list.headerList}}</p>
+                            <li v-for="list in listSupportFooter"><i :class="`fas ${list.class}`"></i><a href="">{{list.list}}</a></li>
                         </ul>
     
                     </div>
                 </div>
             </section>
             <div class="end-page">
+                <div @click="backTopPage" class="back-to-top">    
+                    <i class="fas fa-angle-up"></i>
+                </div>
                 <div class="end-page-container">
                     <div class="end-box">
                         <span>Enjoy the low price. We are tracking any intention of piracy.</span>

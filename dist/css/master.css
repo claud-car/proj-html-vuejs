@@ -718,11 +718,30 @@ footer .get-in-touch .get-container .more-info ul .header-li {
 footer .get-in-touch .get-container .more-info ul li {
   padding: 8px 0;
 }
+footer .get-in-touch .get-container .more-info ul li a {
+  text-decoration: none;
+  color: #e8ecea9e;
+}
 footer .get-in-touch .get-container .more-info ul li i {
   padding-right: 15px;
 }
 footer .end-page {
   background-color: #08080a;
+  position: relative;
+}
+footer .end-page .back-to-top {
+  background-color: #21333E;
+  position: absolute;
+  right: 90px;
+  bottom: 0;
+  border-radius: 50%;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+}
+footer .end-page .back-to-top i {
+  color: #E94649;
+  font-size: 60px;
 }
 footer .end-page .end-page-container {
   padding: 0 23%;

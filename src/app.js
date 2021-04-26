@@ -177,12 +177,19 @@ var app = new Vue({
             },
 
         ]
+
     },
     methods:{
         setIuser: function (position) {
 			this.index = position;
 			return this.index;
 		},
+        backTopPage: function () {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
+		}
     }
 }) //fine root
 
